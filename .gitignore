@@ -1,2 +1,6 @@
-build/*
 *.pdf
+CMakeFiles/
+Makefile
+CMakeCache.txt
+cmake_install.cmake
+lib*.so
