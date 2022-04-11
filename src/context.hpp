@@ -10,11 +10,16 @@ class Context {
     private:
         std::string name;
         Scalar* scalar;
+        std::vector<Context> contexts;
     public:
         Context();
         ~Context();
         void setScalar(Scalar&);
         Scalar& getScalar();
+        bool contextsEmpty();
+        int contextsSize();
+        void pushContext(Context &);
+        Context& popContext();
 };
 
 #endif
