@@ -4,3 +4,9 @@ project(3divi_context)
 
 add_library(3divi_context SHARED "src/context.cpp")
 target_include_directories(3divi_context PRIVATE "src")
+
+add_executable(use_content "src/main.cpp")
+target_sources(use_content 
+    PRIVATE "src/context.cpp"
+    PRIVATE "src/scalar.cpp"
+)

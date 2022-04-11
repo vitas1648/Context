@@ -1,18 +1,12 @@
+#include <string>
 #include <vector>
+#include "scalar.hpp"
 
-class Context 
-{
+class Context {
     private:
-        int age;
-        bool isMask;
-        std::vector<Context> contexts;
-    
+        std::string name;
+        Scalar* scalar;
     public:
         Context();
         ~Context();
-        int getAge() const;
-        void setAge(int age);
-        bool getIsMask() const;
-        void setIsMask(bool isMask);
 };
-
